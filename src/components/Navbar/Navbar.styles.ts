@@ -8,7 +8,7 @@ export const Navbar = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: ${colors.orange};
+    background-color: ${colors.white};
     div{
         padding-left: 2vw;
         img{
@@ -22,7 +22,7 @@ export const Navbar = styled.div`
         li{
             cursor: pointer;
             position: relative;
-            border-bottom: 1px solid ${colors.orange};
+            border-bottom: 1px solid ${colors.white};
             &:hover{
                 border-bottom: 1px solid ${colors.black};
             }
@@ -84,7 +84,7 @@ export const Navbar = styled.div`
             z-index: 999;
             ul{
                 z-index: 999;
-                background-color: ${colors.orange};
+                background-color: ${colors.white};
                 position: absolute;
                 width: 100%;
                 padding: 0;

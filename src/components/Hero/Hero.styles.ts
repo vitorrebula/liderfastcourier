@@ -55,7 +55,7 @@ export const Hero = styled.div`
         }
 
         .wpp-button-hero {
-        background-color: ${colors.orange};
+        background-color: ${colors.white};
         width: fit-content;
         height: 100%;
         margin-top: 20px;
@@ -73,7 +73,7 @@ export const Hero = styled.div`
         &:hover{
             background-color: ${colors.black};
             p{
-                color: ${colors.orange};
+                color: ${colors.white};
             }
         }
     }
