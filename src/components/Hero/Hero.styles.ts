@@ -78,7 +78,8 @@ export const Hero = styled.div`
     }
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 820px) {
+        margin-top: 15vh;
         min-height: 30vh;
        .text-hero{
             h2, p {

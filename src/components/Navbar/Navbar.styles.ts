@@ -54,15 +54,19 @@ export const Navbar = styled.div`
 
 
     @media (max-width: 820px) {
-        height: 100%;
+        height: 15vh;
         display: block;
+        position: fixed;
+        z-index: 99;
         .small-nav{
             display: flex;
             justify-content: space-between;
             div{
-                padding-top: 2vh;
-                padding-bottom: 2vh;
-                padding-left: 2vw;
+                img{
+                    padding-top: 1vh;
+                    padding-bottom: 1vh;
+                    padding-left: 1vw;
+                }
             }
             .menu-bars {
                 padding-top: 2vh;
