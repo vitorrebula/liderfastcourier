@@ -54,7 +54,6 @@ export const Navbar = styled.div`
 
 
     @media (max-width: 820px) {
-        height: 15vh;
         display: block;
         position: fixed;
         z-index: 99;

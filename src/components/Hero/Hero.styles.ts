@@ -79,7 +79,7 @@ export const Hero = styled.div`
     }
 
     @media (max-width: 820px) {
-        margin-top: 15vh;
+        padding-top: 12vh;
         min-height: 30vh;
        .text-hero{
             h2, p {
@@ -97,7 +97,7 @@ export const Hero = styled.div`
             }
             .wpp-button-hero {
                 height: min-content;
-                margin-bottom: 10px;
+                margin-bottom: 3vh;
                 p{
                     font-size: small;
                     padding: 7px;
@@ -109,7 +109,7 @@ export const Hero = styled.div`
         margin-top: 10%;
         margin-bottom: 10%;
         img {
-            width: 60%;
+            width: 50%;
         }
     }
 
