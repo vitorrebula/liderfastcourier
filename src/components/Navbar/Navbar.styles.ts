@@ -8,7 +8,7 @@ export const Navbar = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: ${colors.white};
+    background-color: ${colors.black};
     div{
         padding-left: 2vw;
         img{
@@ -22,9 +22,12 @@ export const Navbar = styled.div`
         li{
             cursor: pointer;
             position: relative;
-            border-bottom: 1px solid ${colors.white};
+            border-bottom: 1px solid ${colors.black};
+            h4{
+                color: ${colors.white};
+            }
             &:hover{
-                border-bottom: 1px solid ${colors.black};
+                border-bottom: 1px solid ${colors.white};
             }
             &:not(:last-child)::after {
                 content: ''; 
@@ -34,7 +37,7 @@ export const Navbar = styled.div`
                 transform: translateY(-50%);
                 width: 1px;
                 height: 20px; 
-                background-color: ${colors.black};
+                background-color: ${colors.white};
             }
             a{
                 text-decoration: none;
@@ -47,6 +50,7 @@ export const Navbar = styled.div`
     }
     .contato{
         padding-right: 2vw;
+        color: ${colors.white};
     }
     .menu-bars {
         display: none;
@@ -76,6 +80,7 @@ export const Navbar = styled.div`
                 cursor: pointer;
                 svg{
                     font-size: 30px;
+                    fill: ${colors.white};
                 }
             }
         }
@@ -84,7 +89,7 @@ export const Navbar = styled.div`
             z-index: 999;
             ul{
                 z-index: 999;
-                background-color: ${colors.white};
+                background-color: ${colors.black};
                 position: absolute;
                 width: 100%;
                 padding: 0;
@@ -98,6 +103,9 @@ export const Navbar = styled.div`
                     animation: expandMenu 0.5s forwards;
                 }
                 li{
+                    h4{
+                        color: ${colors.white};
+                    }
                     cursor: pointer;
                     &:first-of-type{
                         border-top: 1px solid ${colors.black};
@@ -107,9 +115,9 @@ export const Navbar = styled.div`
                         content: none; 
                     }
                     &:hover{
-                        background-color: ${colors.black};
+                        background-color: ${colors.white};
                         h4{
-                            color: ${colors.white};
+                            color: ${colors.black};
                         }
                     }
                 }

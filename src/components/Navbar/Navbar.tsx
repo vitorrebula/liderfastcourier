@@ -23,7 +23,7 @@ function Navbar(props: Navbar) {
     return (
         <styled.Navbar>
             <div className="small-nav">
-                <div><img src="/logoblack.png" alt="Logotipo" /></div>
+                <div><img src="/logowhite.png" alt="Logotipo" /></div>
                 <div className="menu-bars" onClick={toggleMenu}>
                     {!isMenuOpen ? <MenuOutlined /> : <CloseOutlined />}
                 </div>

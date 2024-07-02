@@ -16,7 +16,8 @@ function App() {
       {page === 1 ? (
         <>
           <Hero 
-            img='./herobg.png' 
+            backimg='./herobg.png' 
+            img='./logowhite.png'
             title='LIDER FAST COURIER' 
             text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis leo eu mi varius pulvinar. Curabitur tincidunt dui nec quam bibendum, ut sodales purus fringilla.' 
             buttontext='Faça um orçamento!' 
