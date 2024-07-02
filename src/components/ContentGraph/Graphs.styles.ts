@@ -74,7 +74,7 @@ export const Graphs = styled.div`
                 display: block;
                 margin: 0 auto;
                 padding-left: 5vw;
-                padding-right: 5vw;
+                padding-right: 8vw;
                 width: 100%;
             }
         }
@@ -88,6 +88,8 @@ export const Graphs = styled.div`
             padding-right: 3vw;
             padding-left: 2vw;
             h3{
+            padding-right: 3vw;
+            padding-left: 2vw;
             padding-top: 3vh;
             padding-bottom: 3vh;
             text-align: center;

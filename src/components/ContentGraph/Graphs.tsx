@@ -1,7 +1,7 @@
 import React from "react";
 import * as styled from './Graphs.styles';
 
-function About() {
+function Graphs() {
     
     return (
         <styled.Graphs>
@@ -33,4 +33,4 @@ function About() {
     );
 };
 
-export default About;
+export default Graphs;

@@ -108,9 +108,9 @@ export const Navbar = styled.div`
                     }
                     cursor: pointer;
                     &:first-of-type{
-                        border-top: 1px solid ${colors.black};
+                        border-top: 1px solid ${colors.white};
                     }
-                    border-bottom: 1px solid ${colors.black};
+                    border-bottom: 1px solid ${colors.white};
                     &:not(:last-child)::after {
                         content: none; 
                     }
