@@ -13,10 +13,11 @@ export const Hero = styled.div`
         top: 0;
         left: 0;
         height: 100%;
-        object-fit: cover;
-        filter: grayscale(10%) brightness(70%);
+        filter: grayscale(10%) brightness(50%);
         z-index: -1;
         img {
+            object-fit: cover;
+            object-position: center;
             width: 100vw;
             height: 100%;
         }
