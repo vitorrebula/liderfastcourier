@@ -1,0 +1,136 @@
+import React from "react";
+import styled from 'styled-components';
+import colors from '../../styles.colors';
+
+export const Navbar = styled.div`
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: ${colors.orange};
+    div{
+        padding-left: 2vw;
+        img{
+            width: 70px;
+        }
+    }
+    .itens-menu{
+        justify-content: space-between;
+        ul{
+        display: inline-flex;
+        li{
+            cursor: pointer;
+            position: relative;
+            border-bottom: 1px solid ${colors.orange};
+            &:hover{
+                border-bottom: 1px solid ${colors.black};
+            }
+            &:not(:last-child)::after {
+                content: ''; 
+                position: absolute;
+                right: 0px; 
+                top: 50%; 
+                transform: translateY(-50%);
+                width: 1px;
+                height: 20px; 
+                background-color: ${colors.black};
+            }
+            a{
+                text-decoration: none;
+                color: ${colors.black};
+            }
+            padding: 15px;
+            list-style: none;
+        }
+        }
+    }
+    .contato{
+        padding-right: 2vw;
+    }
+    .menu-bars {
+        display: none;
+    }
+
+
+    @media (max-width: 820px) {
+        height: 100%;
+        display: block;
+        .small-nav{
+            display: flex;
+            justify-content: space-between;
+            div{
+                padding-top: 2vh;
+                padding-bottom: 2vh;
+                padding-left: 2vw;
+            }
+            .menu-bars {
+                padding-top: 2vh;
+                padding-bottom: 2vh;
+                padding-right: 2vw;
+                display: flex;
+                cursor: pointer;
+                svg{
+                    font-size: 30px;
+                }
+            }
+        }
+        .itens-menu{
+            padding-left: 0;
+            z-index: 999;
+            ul{
+                z-index: 999;
+                background-color: ${colors.orange};
+                position: absolute;
+                width: 100%;
+                padding: 0;
+                display: block;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                &.off {
+                    animation: collapseMenu 0.5s backwards;
+                }
+
+                &.active {
+                    animation: expandMenu 0.5s forwards;
+                }
+                li{
+                    cursor: pointer;
+                    &:first-of-type{
+                        border-top: 1px solid ${colors.black};
+                    }
+                    border-bottom: 1px solid ${colors.black};
+                    &:not(:last-child)::after {
+                        content: none; 
+                    }
+                    &:hover{
+                        background-color: ${colors.black};
+                        h4{
+                            color: ${colors.white};
+                        }
+                    }
+                }
+            }
+        }
+        .contato{
+            display: none;
+        }
+
+    }
+    @keyframes expandMenu {
+        from {
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+        to {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+
+    @keyframes collapseMenu {
+        from {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+        to {
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+    }
+`;
