@@ -3,7 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar {
+    width: 2px;
+}
 
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffd950;
+}
 body {
     font-family: "Poppins", sans-serif;
 }
