@@ -7,6 +7,7 @@ import { Graphs } from './components/ContentGraph';
 import { Diferentials } from './components/Diferentials';
 import { BrasilAction } from './components/BrasilAction';
 import { MailSender } from './components/MailSender';
+import { Footer } from './components/Footer';
 
 import { FixedWppButton } from './components/FixedWppButton';
 import './App.css';
@@ -32,6 +33,7 @@ function App() {
           <Diferentials />
           <BrasilAction />
           <MailSender />
+          <Footer />
           <FixedWppButton />
         </>
       ) : (
