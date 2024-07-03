@@ -5,6 +5,8 @@ export const BrasilAction = styled.div`
     width: 100%;
     background-color: ${colors.black};
     height: 100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
     .brasilcontent{
         padding-top: 10vh;
         padding-bottom: 10vh;
@@ -31,6 +33,8 @@ export const BrasilAction = styled.div`
         }
     }
     @media(max-width: 768px){
+        padding-left: 8vw;
+        padding-right: 8vw;
         .brasilcontent{
             flex-direction: column-reverse;
             .imgbrasil{
@@ -39,8 +43,6 @@ export const BrasilAction = styled.div`
             .brasiltext{
                 margin-bottom: 5vh;
                 text-align: center;
-                padding-left: 8vw;
-                padding-right: 8vw;
                 h3{
                     padding-bottom: 2vh;
                     font-size: 2rem;
