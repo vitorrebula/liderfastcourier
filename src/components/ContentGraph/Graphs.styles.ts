@@ -3,12 +3,13 @@ import colors from '../../styles.colors';
 
 export const Graphs = styled.div`
     background-color: ${colors.cinzaclaro};
+    padding-left: 4vw;
+    padding-right: 3vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     justify-content: center;
     align-items: center;
     div{
-        padding-left: 10px;
         display: flex;
         flex: 1;
         gap: 10%;
@@ -74,7 +75,7 @@ export const Graphs = styled.div`
                 display: block;
                 margin: 0 auto;
                 padding-left: 5vw;
-                padding-right: 8vw;
+                padding-right: 6vw;
                 width: 100%;
             }
         }

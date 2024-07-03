@@ -6,7 +6,7 @@ export const InitialPage = styled.div`
     height: 100%;
     overflow-x: hidden;
     .container{
-        max-width: 1130px;
+        max-width: 1500px;
         margin: 0 auto;
     }
 `;

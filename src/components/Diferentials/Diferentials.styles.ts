@@ -2,15 +2,24 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   text-align: center;
-  max-width: 80vw;
-  margin-top: 10vh !important;
-  margin-bottom: 10vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    margin-bottom: 3rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: auto;
+  }
 `;
 
 export const Title = styled.h2`
   font-size: 2rem;
   margin-bottom: 4rem;
-  margin-top: 2rem;
+  margin-top: 10vh;
   font-weight: 700;
   @media (max-width: 768px) {
     margin-bottom: 3rem;
@@ -25,6 +34,7 @@ export const Grid = styled.div`
   grid-template-rows: repeat(2, auto);
   gap: 2rem;
   justify-items: center;
+  margin-bottom: 10vh;
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);

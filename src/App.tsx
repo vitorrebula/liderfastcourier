@@ -5,6 +5,7 @@ import { Hero } from './components/Hero';
 import { About } from './components/ContentAbout'
 import { Graphs } from './components/ContentGraph';
 import { Diferentials } from './components/Diferentials';
+import { BrasilAction } from './components/BrasilAction';
 
 import { FixedWppButton } from './components/FixedWppButton';
 import './App.css';
@@ -28,6 +29,7 @@ function App() {
           <About />
           <Graphs />
           <Diferentials />
+          <BrasilAction />
           <FixedWppButton />
         </>
       ) : (
