@@ -8,9 +8,12 @@ export const Navbar = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
     background-color: ${colors.black};
     div{
         padding-left: 2vw;
+        cursor: pointer;
         img{
             width: 70px;
         }
@@ -66,6 +69,7 @@ export const Navbar = styled.div`
             display: flex;
             justify-content: space-between;
             div{
+                cursor: pointer;
                 img{
                     padding-top: 1vh;
                     padding-bottom: 1vh;

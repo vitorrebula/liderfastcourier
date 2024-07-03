@@ -20,10 +20,14 @@ function Navbar(props: Navbar) {
         return;
     }
 
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     return (
         <styled.Navbar>
             <div className="small-nav">
-                <div><img src="/logowhite.png" alt="Logotipo" /></div>
+                <div onClick={scrollToTop}><img src="/logowhite.png" alt="Logotipo" /></div>
                 <div className="menu-bars" onClick={toggleMenu}>
                     {!isMenuOpen ? <MenuOutlined /> : <CloseOutlined />}
                 </div>
