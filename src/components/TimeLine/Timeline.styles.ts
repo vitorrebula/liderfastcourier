@@ -98,4 +98,7 @@ export const TimelineContent = styled.div<{ active: boolean, left: boolean }>`
   @media(max-width: 800px){
     width: 35vw;
   }
+  @media(max-width: 460px){
+    font-size: 13px;
+  }
 `;
