@@ -45,6 +45,7 @@ function App() {
             />
           </div>
           <Timeline />
+          <Footer />
         </>
       ) : (page === 3 ? (
         <>
