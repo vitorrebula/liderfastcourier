@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import * as styled from './About.styles';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-function About() {
-    
+interface About {
+    title: string,
+    text: string
+}
+
+function About(props: About) {
+    const { title, text } = props
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
         <styled.About className="container">
-                <h2>Mais de 40 anos como Pioneira no Transporte</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic labore corrupti quos cupiditate vel. Et tempore explicabo placeat neque. Inventore, iure sit vel amet autem enim, sint praesentium in dolor pariatur quibusdam dolores maxime placeat! Vero nesciunt dicta voluptates saepe.</p>
+                <h2>{title}</h2>
+                <p>{text}</p>
         </styled.About>
     );
 };

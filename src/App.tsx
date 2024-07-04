@@ -12,6 +12,7 @@ import { Footer } from './components/Footer';
 import { FixedWppButton } from './components/FixedWppButton';
 import './App.css';
 import * as styled from './App.styles'
+import Timeline from './components/TimeLine/Timeline';
 
 function App() {
   const [page, setPage] = useState(1);
@@ -19,7 +20,6 @@ function App() {
   return (
     <styled.InitialPage>
       <Navbar setPage={setPage} />
-      <FixedWppButton />
       {page === 1 ? (
         <>
           <Hero
@@ -29,7 +29,7 @@ function App() {
             text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis leo eu mi varius pulvinar. Curabitur tincidunt dui nec quam bibendum, ut sodales purus fringilla.'
             buttontext='Faça um orçamento!'
           />
-          <About />
+          <About title='Mais de 40 anos como Pioneira no Transporte' text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic labore corrupti quos cupiditate vel. Et tempore explicabo placeat neque. Inventore, iure sit vel amet autem enim, sint praesentium in dolor pariatur quibusdam dolores maxime placeat! Vero nesciunt dicta voluptates saepe.' />
           <Graphs />
           <Diferentials />
           <BrasilAction />
@@ -38,13 +38,13 @@ function App() {
         </>
       ) : (page === 2 ? (
         <>
-          <Hero
-            backimg='./herobg.png'
-            img='logodourada.png'
-            title='Quem somos?'
-            text='Saiba um pouco mais sobre nós!!'
-            buttontext='Saiba mais!'
-          />
+          <div className='first'>
+            <About
+              title='Quem somos?'
+              text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic labore corrupti quos cupiditate vel. Et tempore explicabo placeat neque. Inventore, iure sit vel amet autem enim, sint praesentium in dolor pariatur quibusdam dolores maxime placeat! Vero nesciunt dicta voluptates saepe.'
+            />
+          </div>
+          <Timeline />
         </>
       ) : (page === 3 ? (
         <>
@@ -69,6 +69,7 @@ function App() {
       )
       )
       )}
+      <FixedWppButton />
     </styled.InitialPage>
   );
 }
