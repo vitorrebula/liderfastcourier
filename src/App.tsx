@@ -60,7 +60,7 @@ function App() {
       ) : (page === 2 ? (
         <>
           <Hero
-            backimg='./herodifferentbg.png'
+            backimg='./herobg.png'
             img='./logowhite.png'
             title='QUEM SOMOS?'
             text='Conheça um pouco mais sobre nossa história, e entenda o porquê de sermos Lider, não só no nome, mas em excelência e profissionalismo.'
@@ -78,7 +78,7 @@ function App() {
       ) : (
         <>
           <Hero
-            backimg='./servicobg.png'
+            backimg='./herobg.png'
             img='pessoa-caixa.png'
             title='SERVIÇOS LÍDER'
             text='Fazemos qualquer tipo de serviço relacionado ao transporte, e contamos com uma experiência de 30 anos de mercado!!'
