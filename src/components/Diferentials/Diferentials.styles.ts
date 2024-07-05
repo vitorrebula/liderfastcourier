@@ -1,12 +1,16 @@
 import styled from 'styled-components';
+import colors from '../../styles.colors';
 
-export const Container = styled.div`
+interface StyledProps {
+  page: number;
+}
+
+export const Container = styled.div<StyledProps>`
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
   margin: 0 auto;
   @media (max-width: 768px) {
     margin-bottom: 3rem;
@@ -14,6 +18,14 @@ export const Container = styled.div`
     padding-right: 2vw;
     width: auto;
   }
+
+  ${({ page }) => page === 1 && `
+    background-color: ${colors.white};
+  `}
+
+  ${({ page }) => page === 2 && `
+    background-color: ${colors.cinzaclaro};
+  `}
 `;
 
 export const Title = styled.h2`
@@ -21,6 +33,7 @@ export const Title = styled.h2`
   margin-bottom: 4rem;
   margin-top: 10vh;
   font-weight: 700;
+  max-width: 500px;
   @media (max-width: 768px) {
     margin-bottom: 3rem;
     padding-left: 2vw;

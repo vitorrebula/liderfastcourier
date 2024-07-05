@@ -37,7 +37,6 @@ function Navbar(props: Navbar) {
                     <li onClick={() => setPageonNav(1)}><p><h4>HOME</h4></p></li>
                     <li onClick={() => setPageonNav(2)}><p><h4>QUEM SOMOS</h4></p></li>
                     <li onClick={() => setPageonNav(3)}><p><h4>SERVIÇOS</h4></p></li>
-                    <li onClick={() => setPageonNav(4)}><p><h4>CLIENTES</h4></p></li>
                 </ul>
             </div>
             <div className="contato">

@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 interface About {
     title: string,
-    text: string
+    text: string[]
 }
 
 function About(props: About) {
@@ -16,7 +16,12 @@ function About(props: About) {
     return (
         <styled.About className="container">
                 <h2>{title}</h2>
-                <p>{text}</p>
+                {text.map((paragraph, index) => (
+                    <React.Fragment key={index}>
+                        <p>{paragraph}</p>
+                        <br />
+                    </React.Fragment>
+                ))}
         </styled.About>
     );
 };

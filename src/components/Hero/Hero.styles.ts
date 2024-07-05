@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 import colors from '../../styles.colors';
 
-export const Hero = styled.div`
+interface HeroProps {
+    page: number;
+}
+
+export const Hero = styled.div<HeroProps>`
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 100vw;
+    padding-top: 5vh;
 
     .background-image {
         position: absolute;
@@ -30,7 +35,7 @@ export const Hero = styled.div`
         margin-bottom: 5%;
         box-sizing: border-box;
         img {
-            width: 80%;
+            width: 100%;
         }
     }
 
@@ -55,39 +60,39 @@ export const Hero = styled.div`
         }
 
         .wpp-button-hero {
-        background-color: ${colors.white};
-        width: fit-content;
-        height: 100%;
-        margin-top: 20px;
-        color: white;
-        border-radius: 10px;
-        cursor: pointer;
-        p{
-            margin: 0;
-            color: ${colors.black};
-            font-weight: bold;
-            font-size: 1.1em;
-            padding: 10px;
-            text-shadow: none;
-        }
-        &:hover{
-            background-color: ${colors.black};
-            p{
-                color: ${colors.white};
+            background-color: ${colors.white};
+            width: fit-content;
+            height: 100%;
+            margin-top: 20px;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            p {
+                margin: 0;
+                color: ${colors.black};
+                font-weight: bold;
+                font-size: 1.1em;
+                padding: 10px;
+                text-shadow: none;
+            }
+            &:hover {
+                background-color: ${colors.black};
+                p {
+                    color: ${colors.white};
+                }
             }
         }
-    }
     }
 
     @media (max-width: 820px) {
         padding-top: 12vh;
         min-height: 30vh;
-       .text-hero{
+        .text-hero {
             h2, p {
                 color: ${colors.white};
                 font-size: 1.5em;
             }
-            h2{
+            h2 {
                 margin-top: 10px;
             }
             p {
@@ -99,7 +104,7 @@ export const Hero = styled.div`
             .wpp-button-hero {
                 height: min-content;
                 margin-bottom: 3vh;
-                p{
+                p {
                     font-size: small;
                     padding: 7px;
                 }
@@ -114,4 +119,32 @@ export const Hero = styled.div`
         }
     }
 
+    ${({ page }) => page === 3 && `
+        padding-top: 10vh;
+        .imglogo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0;
+            margin-top: 0;
+            box-sizing: border-box;
+            img {
+                width: 100%;
+            }
+        }
+        @media (max-width: 820px) {
+            padding-top: 12vh;
+        }
+    `}
+    ${({ page }) => page === 2 && `
+        .imglogo {
+            img {
+                width: 80%;
+            }
+        }
+        .text-hero{
+            p{
+                max-width: 100%;
+            }
+        }
+    `}
 `;

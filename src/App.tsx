@@ -13,9 +13,29 @@ import { FixedWppButton } from './components/FixedWppButton';
 import './App.css';
 import * as styled from './App.styles'
 import Timeline from './components/TimeLine/Timeline';
+import { CheckCircleOutlined, TeamOutlined, TruckOutlined, FileTextOutlined, LikeOutlined, LineChartOutlined, CalendarOutlined, LaptopOutlined, SafetyOutlined } from '@ant-design/icons';
+
 
 function App() {
   const [page, setPage] = useState(1);
+
+  const itemsforHome = [
+    { icon: <CheckCircleOutlined />, text: 'Soluções de acordo com a necessidade e tamanho do cliente' },
+    { icon: <TeamOutlined />, text: 'Um time experiente e uma empresa consolidada' },
+    { icon: <LikeOutlined />, text: 'Entregas rápidas e seguras para proporcionar uma maior satisfação do seu cliente' },
+    { icon: <TruckOutlined />, text: 'Uma frota preparada para atender qualquer tipo de demanda' },
+    { icon: <FileTextOutlined />, text: 'Contratos personalizados e específicos para sua demanda' },
+    { icon: <LineChartOutlined />, text: 'Uma logística veloz e integrada para alavancar resultados' },
+  ];
+
+  const itemsforPage2 = [
+    { icon: <LineChartOutlined />, text: 'Alavanque suas vendas com uma logística experiente' },
+    { icon: <CalendarOutlined />, text: 'Suas entregas sempre em dia, e seu cliente mais feliz!' },
+    { icon: <LaptopOutlined />, text: 'Obtenha uma orçamento online, e conte conosco como parceiros!' },
+    { icon: <TruckOutlined />, text: 'Uma frota preparada para atender qualquer tipo de demanda' },
+    { icon: <FileTextOutlined />, text: 'Contratos personalizados e específicos para sua demanda' },
+    { icon: <SafetyOutlined />, text: 'Conte com segurança e confiança em seus fretes e suas encomendas.' },
+  ];
 
   return (
     <styled.InitialPage>
@@ -28,48 +48,47 @@ function App() {
             title='LIDER FAST COURIER'
             text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis leo eu mi varius pulvinar. Curabitur tincidunt dui nec quam bibendum, ut sodales purus fringilla.'
             buttontext='Faça um orçamento!'
+            page={page}
           />
-          <About title='Mais de 40 anos como Pioneira no Transporte' text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic labore corrupti quos cupiditate vel. Et tempore explicabo placeat neque. Inventore, iure sit vel amet autem enim, sint praesentium in dolor pariatur quibusdam dolores maxime placeat! Vero nesciunt dicta voluptates saepe.' />
+          <About title='Mais de 40 anos como Pioneira no Transporte' text={['Desde o início, temos inovado constantemente para atender às necessidades dinâmicas de nossos clientes, garantindo entregas rápidas e seguras. Nossa história de sucesso é marcada pela dedicação contínua à excelência e ao serviço ao cliente, posicionando-nos como a escolha preferida para soluções logísticas confiáveis e eficientes.']} />
           <Graphs />
-          <Diferentials />
+          <Diferentials title='Diferenciais que nos fazem Líderes!' items={itemsforHome} page={page}/>
           <BrasilAction />
           <MailSender />
           <Footer />
         </>
       ) : (page === 2 ? (
         <>
-          <div className='first'>
-            <About
-              title='Quem somos?'
-              text='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic labore corrupti quos cupiditate vel. Et tempore explicabo placeat neque. Inventore, iure sit vel amet autem enim, sint praesentium in dolor pariatur quibusdam dolores maxime placeat! Vero nesciunt dicta voluptates saepe.'
-            />
-          </div>
+          <Hero
+            backimg='./herodifferentbg.png'
+            img='./logowhite.png'
+            title='QUEM SOMOS?'
+            text='Conheça um pouco mais sobre nossa história, e entenda o porquê de sermos Lider, não só no nome, mas em excelência e profissionalismo.'
+            buttontext='Faça um orçamento!'
+            page={page}
+          />
+          <About
+            title='Quem somos?'
+            text={['A Lider Fast Courier é uma empresa tradicional e experiente no ramo de transportes, comprometida em oferecer serviços de entrega rápida e segura. Com anos de atuação no mercado, nossa missão é proporcionar uma experiência de entrega excepcional, combinando agilidade, segurança e precisão. Nossa equipe de profissionais qualificados trabalha incansavelmente para superar as expectativas dos clientes, utilizando tecnologia de ponta e práticas inovadoras para garantir a máxima satisfação. Confie na Lider Fast Courier para suas necessidades de entrega e descubra a diferença de contar com uma empresa que preza pela excelência e pelo compromisso com a qualidade.']}
+          />
+          <Diferentials title='Os benefícios de confiar em uma Empresa Tradicional como a Líder' items={itemsforPage2} page={page}/>
           <Timeline />
           <Footer />
-        </>
-      ) : (page === 3 ? (
-        <>
-          <Hero
-            backimg='./herobg.png'
-            img='logodourada.png'
-            title='Nossos Serviços'
-            text='Fazemos qualquer tipo de serviço relacionado ao transporte, e contamos com uma experiência de 30 anos de mercado!!'
-            buttontext='Saiba mais!'
-          />
         </>
       ) : (
         <>
           <Hero
-            backimg='./herobg.png'
-            img='logodourada.png'
-            title='Nossos Clientes'
-            text='Nossos clientes são as nossas prioridades!!'
+            backimg='./servicobg.png'
+            img='pessoa-caixa.png'
+            title='SERVIÇOS LÍDER'
+            text='Fazemos qualquer tipo de serviço relacionado ao transporte, e contamos com uma experiência de 30 anos de mercado!!'
             buttontext='Saiba mais!'
+            page={page}
           />
         </>
       )
       )
-      )}
+      }
       <FixedWppButton />
     </styled.InitialPage>
   );

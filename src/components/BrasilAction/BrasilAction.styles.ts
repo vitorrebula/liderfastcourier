@@ -28,7 +28,7 @@ export const BrasilAction = styled.div`
                 font-size: 3rem;
             }
             p{
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
         }
     }

@@ -5,6 +5,7 @@ export const buttonwpp = styled.div`
     position: fixed;
     bottom: 7%;
     right: 10%;
+    z-index: 3;
     svg{
         border-radius: 100%;
         background-color: ${colors.zap};
@@ -13,7 +14,6 @@ export const buttonwpp = styled.div`
         height: 50px;
         position: fixed;
         fill: ${colors.white};
-        z-index: 2;
         animation: pulseIcon 0.6s infinite alternate;
         &:hover{
             fill: ${colors.white};

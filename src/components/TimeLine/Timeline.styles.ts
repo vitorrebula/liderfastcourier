@@ -24,6 +24,9 @@ export const Title = styled.div`
         padding-left: 3vw;
         padding-right: 3vw;
         text-align: center;
+        h3{
+          font-size: 1.5rem;
+        }
     }
 `;
 
@@ -35,6 +38,10 @@ export const TimelineContainer = styled.div`
   position: relative;
   margin-top: 10vh;
   margin-bottom: 10vh;
+  @media(max-width: 800px){
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
 `;
 
 export const TimelineLine = styled.div`
