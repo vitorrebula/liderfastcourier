@@ -120,7 +120,7 @@ export const Hero = styled.div<HeroProps>`
     }
 
     ${({ page }) => page === 3 && `
-        padding-top: 10vh;
+        padding-top: 15vh;
         .imglogo {
             display: flex;
             justify-content: center;
@@ -128,7 +128,7 @@ export const Hero = styled.div<HeroProps>`
             margin-top: 0;
             box-sizing: border-box;
             img {
-                width: 100%;
+                width: 70%;
             }
         }
         @media (max-width: 820px) {
