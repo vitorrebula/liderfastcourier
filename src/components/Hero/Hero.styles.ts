@@ -135,16 +135,4 @@ export const Hero = styled.div<HeroProps>`
             padding-top: 12vh;
         }
     `}
-    ${({ page }) => page === 2 && `
-        .imglogo {
-            img {
-                width: 80%;
-            }
-        }
-        .text-hero{
-            p{
-                max-width: 100%;
-            }
-        }
-    `}
 `;
