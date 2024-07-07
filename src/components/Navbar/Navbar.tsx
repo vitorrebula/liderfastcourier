@@ -16,6 +16,7 @@ function Navbar(props: Navbar) {
 
     const setPageonNav = (number: number) => {
         setPage(number);
+        scrollToTop();
         toggleMenu();
         return;
     }
