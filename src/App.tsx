@@ -14,6 +14,8 @@ import './App.css';
 import * as styled from './App.styles'
 import Timeline from './components/TimeLine/Timeline';
 import { CheckCircleOutlined, TeamOutlined, TruckOutlined, FileTextOutlined, LikeOutlined, LineChartOutlined, CalendarOutlined, LaptopOutlined, SafetyOutlined } from '@ant-design/icons';
+import { CardServices } from './components/Cardservices';
+import { Carrossel } from './components/Carrossel';
 
 
 function App() {
@@ -85,6 +87,11 @@ function App() {
             buttontext='Saiba mais!'
             page={page}
           />
+          <About title='Fazemos tudo relacionado à Transportes!' text={['Na Lider Fast Courier, oferecemos uma ampla gama de serviços de transporte rápidos e eficientes, incluindo entregas e fretes, para atender às suas necessidades. Desde entregas expressas até transportes especializados, nossa equipe está pronta para garantir que suas encomendas e cargas cheguem ao destino com segurança e pontualidade. Com um compromisso firme com a excelência, cuidamos de todo o processo logístico, proporcionando uma experiência de transporte confiável e sem complicações.']}/>
+          <CardServices />
+          <Carrossel />
+          <MailSender />
+          <Footer />
         </>
       )
       )

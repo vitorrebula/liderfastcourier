@@ -13,6 +13,7 @@ function Carrossel() {
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
                 className="carrossel"
+                autoplay={{ delay: 500 }}
             >
                 <SwiperSlide>
                     <div className="carousel-content">
@@ -29,7 +30,6 @@ function Carrossel() {
                         <img src="./Carousel3.png" alt="" />
                     </div>
                 </SwiperSlide>
-                {/* Adicione mais SwiperSlides conforme necessário */}
             </Swiper>
         </styled.Container>
     );
