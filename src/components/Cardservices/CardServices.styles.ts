@@ -98,6 +98,6 @@ export const CardTitle = styled.h3`
 export const CardDescription = styled.p`
   margin: 0;
   @media (max-width: 768px) {
-    font-size: 1em;
+    font-size: 0.7em;
   }
 `;
