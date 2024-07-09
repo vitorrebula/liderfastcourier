@@ -91,6 +91,7 @@ export const CardTitle = styled.h3`
   transition: all 0.3s ease-in-out;
   @media (max-width: 768px) {
     font-size: 1em;
+    width: calc(100% - 15px);
   }
 `;
 
