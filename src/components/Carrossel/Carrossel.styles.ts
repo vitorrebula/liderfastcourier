@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import colors from '../../styles.colors';
+import colors from '../..//styles.colors';
 
 export const Container = styled.div`
     background-color: ${colors.cinzaclaro};
@@ -26,7 +26,36 @@ export const Container = styled.div`
                 height: auto;
                 object-fit: cover;
                 object-position: center;
+                user-select: none; /* Impede a seleção */
+                -webkit-user-drag: none; /* Impede o arrasto em navegadores WebKit */
             }
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 30px;
+            height: 30px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &::after {
+                color: white;
+                font-size: 18px;
+            }
+
+            user-select: none;
+        }
+
+        .swiper-pagination-bullet {
+            background-color: white;
+            opacity: 0.7; 
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: white; 
+            opacity: 1;
         }
     }
 
