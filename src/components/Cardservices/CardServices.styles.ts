@@ -82,7 +82,6 @@ export const CardTitle = styled.h3`
   position: absolute;
   top: calc(100% - 80px);
   left: 0px;
-  border-radius: 5px;
   width: calc(100% - 40px);
   margin: 0;
   font-size: 1.5em;
