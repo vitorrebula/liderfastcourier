@@ -12,12 +12,22 @@ export const FooterContainer = styled.footer`
 
 export const Logo = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   cursor: pointer;
-
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 5px;
+  p{
+    cursor: default;
+  }
   img {
     width: 60px;
     height: 60px;
+  }
+  .logovck {
+    width: 30px;
+    height: 30px;
   }
 `;
 

@@ -11,11 +11,15 @@ function Footer() {
     return (
         <FooterContainer>
             <Logo onClick={() => goToLink({link: 'https://www.instagram.com/digitalvck/', type: '_blank'})}>
-                <img src="./VCKLogo.jpg" alt="VCK" />
+                <img src="./logodourada.png" alt="VCK" />
+                <p>Obrigado por liderar conosco!!</p>
             </Logo>
             <SocialIcons>
                 <InstagramOutlined onClick={() => goToLink({link: 'https://www.instagram.com/vitorrebula/', type: '_blank'})}/>
             </SocialIcons>
+            <Logo onClick={() => goToLink({link: 'https://www.instagram.com/digitalvck/', type: '_blank'})}>
+                <img className='logovck' src="./VCKLogo.jpg" alt="VCK" />
+            </Logo>
             <Copyright>
                 © 2024 Líder Fast Courier. All rights reserved.
             </Copyright>
