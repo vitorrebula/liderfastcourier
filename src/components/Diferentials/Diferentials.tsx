@@ -22,7 +22,7 @@ function Diferentials(props: Diferentials) {
   }, []);
 
   return (
-    <styled.Container page={page} className="container">
+    <styled.Container page={page}>
       <styled.Title data-aos="fade-down">{title}</styled.Title>
       <styled.Grid>
         {items.map((item, index) => (
