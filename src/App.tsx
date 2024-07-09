@@ -48,11 +48,11 @@ function App() {
             backimg='./herobg.png'
             img='./logowhite.png'
             title='LIDER FAST COURIER'
-            text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis leo eu mi varius pulvinar. Curabitur tincidunt dui nec quam bibendum, ut sodales purus fringilla.'
+            text='Obrigado por liderar conosco!'
             buttontext='Faça um orçamento!'
             page={page}
           />
-          <About title='Mais de 40 anos como Pioneira no Transporte' text={['Desde o início, temos inovado constantemente para atender às necessidades dinâmicas de nossos clientes, garantindo entregas rápidas e seguras. Nossa história de sucesso é marcada pela dedicação contínua à excelência e ao serviço ao cliente, posicionando-nos como a escolha preferida para soluções logísticas confiáveis e eficientes.']} />
+          <About title='Mais de 20 anos como referência no Transporte' text={['Desde o início, temos inovado constantemente para atender às necessidades dinâmicas de nossos clientes, garantindo entregas rápidas e seguras. Nossa história de sucesso é marcada pela dedicação contínua à excelência e ao serviço ao cliente, posicionando-nos como a escolha preferida para soluções logísticas confiáveis e eficientes.']} />
           <Graphs />
           <Diferentials title='Diferenciais que nos fazem Líderes!' items={itemsforHome} page={page}/>
           <BrasilAction />
@@ -65,7 +65,7 @@ function App() {
             backimg='./herobg.png'
             img='./logowhite.png'
             title='QUEM SOMOS?'
-            text='Conheça um pouco mais sobre nossa história, e entenda o porquê de sermos Lider, não só no nome, mas em excelência e profissionalismo.'
+            text='Conheça um pouco mais sobre nossa história, e entenda o porquê de sermos Lideres, não só no nome, mas em excelência e profissionalismo.'
             buttontext='Faça um orçamento!'
             page={page}
           />

@@ -52,8 +52,8 @@ export const Navbar = styled.div`
         }
     }
     .contato{
-        padding-right: 2vw;
-        color: ${colors.white};
+        opacity: 0.0;
+        cursor: default !important;
     }
     .menu-bars {
         display: none;

@@ -32,9 +32,9 @@ function Graphs() {
     };
 
     const deliveries = useTypewriterNumber(100000, 5000);
-    const years = useTypewriterNumber(50, 5000);
-    const states = useTypewriterNumber(15, 5000);
-    const partners = useTypewriterNumber(15, 5000);
+    const years = useTypewriterNumber(24, 5000);
+    const states = useTypewriterNumber(26, 5000);
+    const kms = useTypewriterNumber(1000000, 5000);
     
     return (
         <styled.Graphs>
@@ -53,11 +53,11 @@ function Graphs() {
                         </div>                
                         <div className="upper" data-aos="fade-up" data-aos-duration="500">
                             <p>Estados Atendidos</p>
-                            <h5>+{states}</h5>
+                            <h5>{states}</h5>
                         </div>                
                         <div data-aos="fade-up" data-aos-duration="300">
-                            <p>Empresas Parceiras</p>
-                            <h5>+{partners}</h5>
+                            <p>Km's percorridos</p>
+                            <h5>+{kms}</h5>
                         </div>
                     </div>
                 </div>

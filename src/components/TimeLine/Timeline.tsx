@@ -11,19 +11,13 @@ function Timeline() {
     }, []);
 
     const events = [
-        { year: 2004, content: 'Vitor Rebula nasceu, agraciando o mundo com sua beleza!' },
-        { year: 2016, content: 'Vitor vai pro Santa Marcelina, e conhece o Gabriel Cadar.' },
-        { year: 2021, content: 'Kaio é apresentado pro Vitor Rebula' },
-        { year: 2022, content: 'Depressao' },
-        { year: 2023, content: 'Depressao' },
-        { year: 2024, content: 'Depressao' },
-        { year: 2025, content: 'Depressao' },
-        { year: 2026, content: 'Depressao' },
-        { year: 2027, content: 'Depressao' },
-        { year: 2028, content: 'Depressao' },
-        { year: 2029, content: 'Depressao' },
-        { year: 2030, content: 'Depressao' },
-        { year: 2031, content: 'Depressao' },
+        { year: 2000, content: 'Criação da Lider Fast Courier!' },
+        { year: 2002, content: 'Primeiro cliente de outro Estado.' },
+        { year: 2005, content: 'Primeira contrato de transporte!' },
+        { year: 2007, content: 'Inauguração da Nova sede de SP.' },
+        { year: 2009, content: 'Batemos a marca de 10.000 entregas!' },
+        { year: 2018, content: 'Batemos a marca de 50.000 entregas!' },
+        { year: 2023, content: 'Batemos a marca de 100.000 entregas!' },
     ];
 
     const marcaBolinha = (index: number) => {
