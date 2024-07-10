@@ -1,7 +1,14 @@
-// Footer.tsx
 import React from 'react';
-import { InstagramOutlined } from '@ant-design/icons';
-import { FooterContainer, Logo, SocialIcons, Copyright } from './Footer.styles';
+import {
+    FooterContainer,
+    LogoContainer,
+    Logo,
+    LinksContainer,
+    Link,
+    LinkImage,
+    LinkImg,
+    Copyright,
+} from './Footer.styles';
 
 function Footer() {
     function scrollToTop() {
@@ -12,21 +19,19 @@ function Footer() {
     }
     return (
         <FooterContainer>
-            <Logo>
-                <img src="./logodourada.png" alt="VCK" onClick={() => scrollToTop()}/>
-                <p>Obrigado por liderar conosco!!</p>
-            </Logo>
-            <SocialIcons>
-                <InstagramOutlined onClick={() => goToLink({link: 'https://www.instagram.com/vitorrebula/', type: '_blank'})}/>
-            </SocialIcons>
-            <Logo onClick={() => goToLink({link: 'https://www.instagram.com/digitalvck/', type: '_blank'})}>
-                <img className='logovck' src="./VCKLogo.jpg" alt="VCK" />
-            </Logo>
-            <Copyright>
-                © 2024 Líder Fast Courier. All rights reserved.
-            </Copyright>
+            <LogoContainer>
+                <Logo src="./logodourada.png" alt="Nereus Logo" onClick={() => scrollToTop()}/>
+                <span>Lider Fast Courier</span>
+            </LogoContainer>
+            <LinksContainer>
+                <Link>31 2105-6800 - Belo Horizonte - MG</Link>
+                <LinkImage>
+                    <LinkImg onClick={() => goToLink({link: 'https://www.instagram.com/digitalvck/', type: '_blank'})} src="./VCKLogo.jpg" alt="Fourth Link Image" />
+                </LinkImage>
+            </LinksContainer>
+            <Copyright>© 2024 Lider Fast Courier - All rights reserved.</Copyright>
         </FooterContainer>
     );
-}
+};
 
 export default Footer;

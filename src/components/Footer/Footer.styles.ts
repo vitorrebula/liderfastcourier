@@ -1,52 +1,59 @@
-import colors from '../../styles.colors';
 import styled from 'styled-components';
+import colors from '../../styles.colors';
 
 export const FooterContainer = styled.footer`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  background-color: #000;
-  color: #fff;
+  padding: 10px 20px;
+  background-color: #000; 
+  color: #fff; 
+  border-top: 1px solid #eaeaea;
+  height: 30vh;
+  @media(max-width: 768px){
+    flex-direction: column;
+    padding-top: 5vh;
+  }
 `;
 
-export const Logo = styled.div`
+export const LogoContainer = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
+`;
+
+export const Logo = styled.img`
+  height: 35px;
+  margin-right: 10px;
   cursor: pointer;
-  margin-bottom: 1rem;
+`;
+
+export const LinksContainer = styled.nav`
+  display: flex;
   align-items: center;
-  gap: 5px;
-  p{
-    cursor: default;
-  }
-  img {
-    width: 60px;
-    height: 60px;
-  }
-  .logovck {
-    width: 30px;
-    height: 30px;
+  gap: 25vw;
+  @media(max-width: 768px){
+    flex-direction: column;
+    gap: 5vh;
   }
 `;
 
-export const SocialIcons = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+export const Link = styled.p`
+  margin: 0 10px;
+  color: ${colors.white}; 
+  text-decoration: none;
+  cursor: default;
+`;
 
-  svg {
-    margin: 0 0.5rem;
-    font-size: 1.5rem;
-    color: #fff;
+export const LinkImage = styled.div`
+  margin: 0 5px;
+`;
 
-    &:hover {
-      color: ${colors.orange};
-    }
-  }
+export const LinkImg = styled.img`
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
 `;
 
 export const Copyright = styled.div`
-  font-size: 0.875rem;
+  color: #888;
 `;
