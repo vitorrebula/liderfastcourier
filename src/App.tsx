@@ -83,7 +83,7 @@ function App() {
             backimg='./herobg.png'
             img='pessoa-caixa.png'
             title='SERVIÇOS LÍDER'
-            text='Fazemos qualquer tipo de serviço relacionado ao transporte, e contamos com uma experiência de 30 anos de mercado!!'
+            text='Fazemos qualquer tipo de serviço relacionado ao transporte, e contamos com uma experiência de 24 anos de mercado!!'
             buttontext='Saiba mais!'
             page={page}
           />
