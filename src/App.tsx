@@ -46,7 +46,7 @@ function App() {
         <>
           <Hero
             backimg='./herobg.png'
-            img='./logowhite.png'
+            img='./logodourada.png'
             title='LIDER FAST COURIER'
             text='Obrigado por liderar conosco!'
             buttontext='Faça um orçamento!'
@@ -63,7 +63,7 @@ function App() {
         <>
           <Hero
             backimg='./herobg.png'
-            img='./logowhite.png'
+            img='./logodourada.png'
             title='QUEM SOMOS?'
             text='Conheça um pouco mais sobre nossa história, e entenda o porquê de sermos Lideres, não só no nome, mas em excelência e profissionalismo.'
             buttontext='Faça um orçamento!'

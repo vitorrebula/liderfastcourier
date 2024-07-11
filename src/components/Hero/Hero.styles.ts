@@ -99,7 +99,7 @@ export const Hero = styled.div<HeroProps>`
                 margin-top: 10px;
                 font-size: 0.75em;
                 font-weight: normal;
-                max-width: 75vw;
+                max-width: 100vw;
             }
             .wpp-button-hero {
                 height: min-content;
@@ -114,6 +114,7 @@ export const Hero = styled.div<HeroProps>`
     .imglogo {
         margin-top: 10%;
         margin-bottom: 10%;
+        width: 80%;
         img {
             width: 50%;
         }

@@ -28,7 +28,7 @@ function Navbar(props: Navbar) {
     return (
         <styled.Navbar>
             <div className="small-nav">
-                <div onClick={scrollToTop}><img src="/logowhite.png" alt="Logotipo" /></div>
+                <div onClick={scrollToTop}><img src="/logodourada.png" alt="Logotipo" /></div>
                 <div className="menu-bars" onClick={toggleMenu}>
                     {!isMenuOpen ? <MenuOutlined /> : <CloseOutlined />}
                 </div>
