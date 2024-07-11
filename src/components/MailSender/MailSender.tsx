@@ -52,7 +52,7 @@ function MailSender() {
                 alert('Falha ao enviar email.');
             });
     };
-
+    //good component to reuse-it in other projects
     return (
         <styled.Container className="container">
             <styled.Title>Entre em contato</styled.Title>
