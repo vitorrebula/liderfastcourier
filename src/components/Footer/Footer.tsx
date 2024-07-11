@@ -30,7 +30,7 @@ function Footer() {
                     <Link>11 5031-2656 - São Paulo - SP</Link>
                 </LinksGroup>
                 <LinksGroup>
-                    <Link>31 99680-8011 - Priscilla Santos</Link>
+                    <Link>31 99680-8011 - Priscila Santos</Link>
                     <Link>31 98301-7768 - Tatiane Guimarães</Link>
                 </LinksGroup>
                 <LinkImage>
