@@ -25,6 +25,10 @@ function Navbar(props: Navbar) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
+    function goToLink() {
+        window.open("https://app.powerbi.com/view?r=eyJrIjoiN2VhODdkNWUtMTM3NC00Mjg0LWFiNzEtMGI2YzdmMjBjOWQ3IiwidCI6ImZhZDgzMjE4LTk0YzUtNDMxMi04ZWFlLWIxNzY4OGU1M2I0ZiJ9&pageName=ReportSection739390e01bc2027f1b13", "_blank");
+    }
+
     return (
         <styled.Navbar>
             <div className="small-nav">
@@ -38,10 +42,11 @@ function Navbar(props: Navbar) {
                     <li onClick={() => setPageonNav(1)}><p><h4>HOME</h4></p></li>
                     <li onClick={() => setPageonNav(2)}><p><h4>QUEM SOMOS</h4></p></li>
                     <li onClick={() => setPageonNav(3)}><p><h4>SERVIÇOS</h4></p></li>
+                    <li className="rastreioli" onClick={() => goToLink()}><p><h4>RASTREAMENTO DE CARGA</h4></p></li>
                 </ul>
             </div>
-            <div className="contato">
-                <h4>Lorem Inpsum!</h4>
+            <div className="rastreiodiv" onClick={() => goToLink()}>
+                <h4>Rastreamento de Carga</h4>
             </div>
         </styled.Navbar>
     );

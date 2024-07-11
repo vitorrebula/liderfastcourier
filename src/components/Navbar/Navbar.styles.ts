@@ -52,9 +52,16 @@ export const Navbar = styled.div`
         }
         }
     }
-    .contato{
-        opacity: 0.0;
-        cursor: default !important;
+    .rastreiodiv{
+        cursor: pointer;
+        color: ${colors.white};
+        padding-right: 10px;
+        &:hover{
+            color: ${colors.orange};
+        }
+    }
+    .rastreioli{
+        display: none;
     }
     .menu-bars {
         display: none;
@@ -128,7 +135,10 @@ export const Navbar = styled.div`
                 }
             }
         }
-        .contato{
+        .rastreioli{
+            display: block;
+        }
+        .rastreiodiv{
             display: none;
         }
 
