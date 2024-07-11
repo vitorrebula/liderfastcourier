@@ -18,10 +18,10 @@ export const Title = styled.h1`
 export const Subtitle = styled.p`
   font-size: 16px;
   padding-bottom: 5vh;
-    strong {
-        font-weight: bold;
-        color: ${colors.orange};
-    }
+  strong {
+    font-weight: bold;
+    color: ${colors.orange};
+  }
 `;
 
 export const Form = styled.form`
@@ -33,13 +33,26 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 2vh;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 2vh;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+`;
+
+export const TextArea = styled.textarea`
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 2vh;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  resize: vertical;
+  min-height: 100px;
 `;
 
 export const CheckboxContainer = styled.div`
