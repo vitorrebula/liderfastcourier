@@ -22,34 +22,38 @@ export const Navbar = styled.div`
     .itens-menu{
         justify-content: space-between;
         ul{
-        display: inline-flex;
-        li{
-            cursor: pointer;
-            position: relative;
-            border-bottom: 1px solid ${colors.black};
-            h4{
-                color: ${colors.white};
+            display: inline-flex;
+            li{
+                cursor: pointer;
+                position: relative;
+                border-bottom: 1px solid ${colors.black};
+                h4{
+                    color: ${colors.white};
+                }
+                &:hover{
+                    border-bottom: 1px solid ${colors.white};
+                }
+                &:not(:last-child)::after {
+                    content: ''; 
+                    position: absolute;
+                    right: 0px; 
+                    top: 50%; 
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 20px; 
+                    background-color: ${colors.white};
+                }
+                a{
+                    text-decoration: none;
+                    color: ${colors.black};
+                }
+                padding: 15px;
+                list-style: none;
+
+                &:nth-child(3)::after {
+                    content: none;
+                }
             }
-            &:hover{
-                border-bottom: 1px solid ${colors.white};
-            }
-            &:not(:last-child)::after {
-                content: ''; 
-                position: absolute;
-                right: 0px; 
-                top: 50%; 
-                transform: translateY(-50%);
-                width: 1px;
-                height: 20px; 
-                background-color: ${colors.white};
-            }
-            a{
-                text-decoration: none;
-                color: ${colors.black};
-            }
-            padding: 15px;
-            list-style: none;
-        }
         }
     }
     .rastreiodiv{
@@ -66,7 +70,6 @@ export const Navbar = styled.div`
     .menu-bars {
         display: none;
     }
-
 
     @media (max-width: 820px) {
         height: auto;
