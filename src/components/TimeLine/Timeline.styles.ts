@@ -18,6 +18,7 @@ export const Title = styled.div`
         justify-content: center;
         img{
             width: 80px;
+            filter: brightness(1.5);
         }
     }
     @media(max-width: 800px){

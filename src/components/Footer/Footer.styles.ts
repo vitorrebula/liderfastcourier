@@ -22,9 +22,10 @@ export const LogoContainer = styled.div`
 `;
 
 export const Logo = styled.img`
-  height: 35px;
+  height: 40px;
   margin-right: 10px;
   cursor: pointer;
+  filter: brightness(1.5);
 `;
 
 export const LinksContainer = styled.nav`

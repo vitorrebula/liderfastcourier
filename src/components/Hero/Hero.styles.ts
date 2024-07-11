@@ -36,6 +36,7 @@ export const Hero = styled.div<HeroProps>`
         box-sizing: border-box;
         img {
             width: 100%;
+            filter: brightness(1.5);
         }
     }
 

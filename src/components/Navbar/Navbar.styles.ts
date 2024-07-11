@@ -16,6 +16,7 @@ export const Navbar = styled.div`
         cursor: pointer;
         img{
             width: 70px;
+            filter: brightness(1.5);
         }
     }
     .itens-menu{
