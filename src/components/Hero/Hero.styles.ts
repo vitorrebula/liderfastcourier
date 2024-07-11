@@ -130,6 +130,7 @@ export const Hero = styled.div<HeroProps>`
             box-sizing: border-box;
             img {
                 width: 70%;
+                filter: none;
             }
         }
         @media (max-width: 820px) {

@@ -13,7 +13,7 @@ export interface Hero {
 function Hero(props: Hero) {
     const { backimg, img, title, text, buttontext, page } = props;
 
-    const links = ["https://wa.me/5531999351651?text=Eu%20gostaria%20de%20fazer%20um%20orçamento!%20Pode%20me%20ajudar?", "https://wa.me/5531983063573?text=Eu%20gostaria%20de%20fazer%20um%20orçamento!%20Pode%20me%20ajudar?"];
+    const links = ["https://wa.me/5531996808011?text=Eu%20gostaria%20de%20fazer%20um%20orçamento!%20Pode%20me%20ajudar?", "https://wa.me/5531983017768?text=Eu%20gostaria%20de%20fazer%20um%20orçamento!%20Pode%20me%20ajudar?"];
 
     const goToWhatsApp = () => {
         const randomIndex = Math.floor(Math.random() * links.length);

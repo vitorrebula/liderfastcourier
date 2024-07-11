@@ -56,7 +56,7 @@ function MailSender() {
     return (
         <styled.Container className="container">
             <styled.Title>Entre em contato</styled.Title>
-            <styled.Subtitle>Central de Atendimento: <strong>31 98306-3573</strong></styled.Subtitle>
+            <styled.Subtitle>Central de Atendimento: <strong>31 2105-6800</strong></styled.Subtitle>
             <styled.Form id="contact-form" onSubmit={handleSubmit}>
                 <styled.Input
                     type="text"
