@@ -114,7 +114,6 @@ export const Hero = styled.div<HeroProps>`
     .imglogo {
         margin-top: 10%;
         margin-bottom: 10%;
-        width: 80%;
         img {
             width: 50%;
         }
