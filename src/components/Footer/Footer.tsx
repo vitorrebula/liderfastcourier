@@ -30,8 +30,8 @@ function Footer() {
                     <Link>11 5031-2656 - São Paulo - SP</Link>
                 </LinksGroup>
                 <LinksGroup>
-                    <Link>31 99680-8011 - Priscila Santos</Link>
-                    <Link>31 98301-7768 - Tatiane Guimarães</Link>
+                    <Link>31 99680-8011 - Comercial 1</Link>
+                    <Link>31 98301-7768 - Comercial 2</Link>
                 </LinksGroup>
                 <LinkImage>
                     <LinkImg onClick={() => goToLink({ link: 'https://www.instagram.com/digitalvck/', type: '_blank' })} src="./VCKLogo.jpg" alt="Fourth Link Image" />
